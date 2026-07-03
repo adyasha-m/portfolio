@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adyasha Mahanta — Data & Product Analyst</title>
+    <link rel="icon" type="image/png" href="./assets/android-chrome-192x192.png" />
+    <meta
+      name="description"
+      content="Portfolio of Your Name — data analyst / product analyst."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">AM<span class="dot">.</span></a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="home" class="section hero reveal">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <p class="eyebrow">-- 01 · home</p>
+
+        <div class="identity">
+          <div class="avatar">
+            <img
+              src="profile.jpg"
+              alt="Adyasha Mahanta"
+              onerror="
+                this.style.display = 'none';
+                this.parentElement.classList.add('avatar-fallback');
+              "
+            />
+            <span class="avatar-initials">AM</span>
+          </div>
+          <div class="identity-text">
+            <p class="identity-name">Adyasha Mahanta</p>
+            <p class="identity-role">
+              Data Analyst&nbsp;·&nbsp;Product Analyst
+            </p>
+          </div>
+        </div>
+
+        <h3 class="hero-headline">
+          I enjoy asking better questions.
+          </br>The analysis usually follows.
+        </h3>
+        <p class="hero-sub">
+          With a background in research, AI, and analytics, I enjoy understanding how
+          products and people behave. Most of my work starts with a question, follows
+          the data, and ends with something useful to act on.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+
+        <svg class="hero-chart" viewBox="0 0 420 160" aria-hidden="true">
+          <line x1="0" y1="150" x2="420" y2="150" class="chart-axis" />
+          <path
+            class="chart-line"
+            d="M0,120 L60,128 L120,90 L180,100 L240,55 L300,68 L360,20 L420,32"
+          />
+          <circle class="chart-dot" cx="420" cy="32" r="4" />
+        </svg>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section reveal">
+      <p class="eyebrow">-- 02 · about</p>
+      <h2 class="section-title">About</h2>
+
+      <p class="body-text">
+        I started out building things like training models, writing scripts, and working
+        on AI research. Along the way, I realized the part I enjoyed most wasn't
+        the model itself, but understanding the data behind it: cleaning messy
+        datasets, finding patterns, asking better questions, and turning results
+        into decisions. That curiosity eventually led me to data and product
+        analytics, where I get to combine technical problem-solving with business
+        thinking. Backed by a strong academic and research foundation, I enjoy
+        bringing structure to ambiguity and finding insights that are actually
+        useful, not just interesting.
+      </p>
+
+      <div class="callout">
+        <p class="callout-label">Questions I Keep Coming Back To</p>
+        <ul class="callout-list">
+          <li>What story is the data trying to tell?</li>
+          <li>Are we measuring what actually matters?</li>
+          <li>Is this an insight or just an interesting number?</li>
+          <li>How can this analysis lead to a better decision?</li>
+        </ul>
+      </div>
+    </section>
+      <div class="divider"></div>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section reveal">
+        <p class="eyebrow">-- 03 · projects</p>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="tabs" role="tablist" aria-label="Project categories">
+          <button
+            class="tab active"
+            role="tab"
+            aria-selected="true"
+            data-tab="serious"
+          >
+            Serious Projects
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="fun">
+            Fun Projects
+          </button>
+        </div>
+
+       <!-- Serious Projects -->
+      <div class="tab-panel active" data-panel="serious">
+
+        <!-- RapidKart -->
+        <article class="project-card">
+          <h3 class="project-title">RapidKart — Quick Commerce Product Analytics</h3>
+
+          <div class="project-grid">
+
+            <div>
+              <span class="project-label">Problem</span>
+              <p>
+                Understand where users drop off in the ordering journey and identify
+                operational factors affecting conversion and long-term retention.
+              </p>
+            </div>
+
+            <div>
+              <span class="project-label">Approach</span>
+              <p>
+                Built an end-to-end analytics pipeline on 1M+ simulated events using
+                SQL, Python and PySpark. Performed funnel, cohort and retention
+                analysis before visualizing insights in Power BI.
+              </p>
+            </div>
+
+            <div>
+              <span class="project-label">Outcome</span>
+              <p>
+                Identified a <strong>42.8% checkout drop-off</strong>, discovered a
+                <strong>-0.615 correlation</strong> between delivery time and
+                conversion, and segmented 10,000 users into behavioral cohorts.
+              </p>
+            </div>
+
+            <div>
+              <span class="project-label">Tools</span>
+              <p>SQL • Python • PySpark • Power BI</p>
+            </div>
+
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/adyasha-m/RapidKart" class="link">GitHub →</a>
+            <!-- <a href="#" class="link">Case Study →</a> -->
+          </div>
+        </article>
+
+        <!-- Pizza Sales -->
+        <article class="project-card">
+          <h3 class="project-title">Pizza Sales Dashboard</h3>
+
+          <div class="project-grid">
+
+            <div>
+              <span class="project-label">Problem</span>
+              <p>
+                Analyze sales performance to uncover revenue drivers, customer demand
+                patterns and opportunities for better inventory planning.
+              </p>
+            </div>
+
+            <div>
+              <span class="project-label">Approach</span>
+              <p>
+                Queried transactional data with SQL, performed Pareto analysis and
+                built an interactive Power BI dashboard to explore sales trends and
+                business KPIs.
+              </p>
+            </div>
+
+            <div>
+              <span class="project-label">Outcome</span>
+              <p>
+                Found that nearly <strong>80% of revenue</strong> came from a small
+                subset of products and that weekday sales were
+                <strong>168% higher</strong> than weekends, with peak demand during
+                lunch and evening hours.
+              </p>
+            </div>
+
+            <div>
+              <span class="project-label">Tools</span>
+              <p>SQL • Power BI • Excel</p>
+            </div>
+
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/adyasha-m/Pizza-Sales-Analysis" class="link">GitHub →</a>
+            <!-- <a href="#" class="link">Dashboard →</a> -->
+          </div>
+        </article>
+
+      </div>
+        <!-- Fun Projects -->
+        <!-- <div class="tab-panel" data-panel="fun">
+          <article class="project-card">
+            <h3 class="project-title">Weird Side Project</h3>
+            <div class="project-grid">
+              <div>
+                <span class="project-label">Problem</span>
+                <p>Something quirky you got curious about.</p>
+              </div>
+              <div>
+                <span class="project-label">Approach</span>
+                <p>The scrappy, experimental method.</p>
+              </div>
+              <div>
+                <span class="project-label">Outcome</span>
+                <p>What you found — bonus points if it's funny.</p>
+              </div>
+              <div>
+                <span class="project-label">Tools</span>
+                <p>Python, Google Sheets</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link">GitHub →</a>
+            </div>
+          </article>
+        </div> -->
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section reveal">
+      <p class="eyebrow">-- 04 · experience</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+
+        <!-- Capgemini -->
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            Sep 2025 — Jan 2026
+          </div>
+
+          <div class="timeline-content">
+
+            <div class="timeline-header">
+              <h3 class="timeline-role">Analyst Trainee</h3>
+              <span class="timeline-location">Gurugram, India</span>
+            </div>
+
+            <div class="timeline-subheader">
+              <span class="timeline-company">Capgemini</span>
+              <span class="timeline-type">Full-time</span>
+            </div>
+
+            <p class="timeline-desc">
+              Worked in an enterprise environment solving analytical and operational
+              problems. Collaborated on workflow analysis, Linux-based debugging,
+              and technical documentation across cross-functional teams.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- DRDO -->
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            Mar 2025 — Jun 2025
+          </div>
+
+          <div class="timeline-content">
+
+            <div class="timeline-header">
+              <h3 class="timeline-role">Research Intern</h3>
+              <span class="timeline-location">Bengaluru, India</span>
+            </div>
+
+            <div class="timeline-subheader">
+              <span class="timeline-company">LRDE, DRDO</span>
+              <span class="timeline-type">Internship</span>
+            </div>
+
+            <p class="timeline-desc">
+              Built a simulation environment modelling real-time radar operations
+              across 350+ tasks. Evaluated scheduling algorithms using KPIs such as
+              task completion, delay, and resource utilization, achieving <strong>91%+</strong>
+              completion across dynamic scenarios.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- IIT -->
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            May 2024 — Jul 2024
+          </div>
+
+          <div class="timeline-content">
+
+            <div class="timeline-header">
+              <h3 class="timeline-role">Summer Research Intern</h3>
+              <span class="timeline-location">Bhubaneswar, India</span>
+            </div>
+
+            <div class="timeline-subheader">
+              <span class="timeline-company">AHRC, IIT Bhubaneswar</span>
+              <span class="timeline-type">Internship</span>
+            </div>
+
+            <p class="timeline-desc">
+              Optimized the photogrammetry pipeline for <em>Project Tirtha</em> improving
+              processing speed by <strong>10×</strong>. Evaluated runtime, VRAM
+              usage and Homography AUC to guide architecture decisions.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+      <div class="divider"></div>
+
+      <!-- ============ SKILLS ============ -->
+      <section id="skills" class="section reveal">
+  <p class="eyebrow">-- 05 · skills</p>
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-group">
+    <p class="skills-label">Languages</p>
+    <div class="pills">
+      <span class="pill pill-dark">SQL</span>
+      <span class="pill pill-dark">Python</span>
+      <span class="pill pill-dark">C++</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <p class="skills-label">Data Analysis</p>
+    <div class="pills">
+      <span class="pill pill-slate">Data Validation</span>
+      <span class="pill pill-slate">Statistical Analysis</span>
+      <span class="pill pill-slate">Workflow Analysis</span>
+      <span class="pill pill-slate">Process Optimization</span>
+      <span class="pill pill-slate">KPI Tracking</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <p class="skills-label">Product Analytics</p>
+    <div class="pills">
+      <span class="pill pill-lavender">Funnel Analysis</span>
+      <span class="pill pill-lavender">Cohort Analysis</span>
+      <span class="pill pill-lavender">User Segmentation</span>
+      <span class="pill pill-lavender">Performance Analysis</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <p class="skills-label">Visualization & BI</p>
+    <div class="pills">
+      <span class="pill pill-outline">Power BI</span>
+      <span class="pill pill-outline">Google Data Studio</span>
+      <span class="pill pill-outline">MS Excel</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <p class="skills-label">Tools & Technologies</p>
+    <div class="pills">
+      <span class="pill pill-dark">MySQL</span>
+      <span class="pill pill-dark">Git</span>
+      <span class="pill pill-dark">PySpark</span>
+      <span class="pill pill-dark">Pandas</span>
+      <span class="pill pill-dark">NumPy</span>
+      <span class="pill pill-dark">APIs</span>
+      <span class="pill pill-dark">JSON</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <p class="skills-label">Currently Learning</p>
+    <div class="pills">
+      <span class="pill pill-pink">Product Thinking</span>
+      <span class="pill pill-pink">Experiment Design</span>
+      <span class="pill pill-pink">A/B Testing</span>
+    </div>
+  </div>
+</section>
+
+      <div class="divider"></div>
+
+      <!-- ============ RESUME ============ -->
+      <section id="resume" class="section reveal">
+        <p class="eyebrow">-- 06 · resume</p>
+        <h2 class="section-title">Resume</h2>
+
+        <div class="callout mono-callout">
+          <p>Tailored for data & product analyst roles.</p>
+        </div>
+
+        <a href="./resume/ADYASHA MAHANTA  ANALYST V3.pdf" download class="btn btn-outline"
+          >Download Resume ↓</a
+        >
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section reveal">
+        <p class="eyebrow">-- 07 · contact</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="body-text">Reach out to me for collaborations or just to say hello!</p>
+
+        <div class="callout mono-callout">
+          <p>
+            Open to data & product analyst roles, and interesting problems in
+            general.
+          </p>
+        </div>
+        
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/adyasha-mahanta-13280121b/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            class="social-icon"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/adyasha-m"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            class="social-icon"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.95c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
+              />
+            </svg>
+          </a>
+          <a href="mailto:adyasha.m482@gmail.com" aria-label="Email" class="social-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <!-- <p class="footer-quote">
+          <span class="quote-mark">“</span
+          ><span id="footerQuote">Turning data into decisions.</span>
+        </p> -->
+        <p class="footer-meta">© <span id="year"></span> Adyasha Mahanta</p>
+        <div class="footer-icon" aria-hidden="true">&lt;/&gt;</div>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
